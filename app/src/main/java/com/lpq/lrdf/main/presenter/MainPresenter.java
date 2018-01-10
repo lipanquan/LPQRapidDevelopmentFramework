@@ -24,8 +24,33 @@ import javax.inject.Inject;
  * 作者：lipanquan on 2018/1/9 <br />
  * 邮箱：862321807@qq.cn <br />
  */
+//@Module 这里不能用Module，因为父类构造有3个
 public class MainPresenter extends BasePresenter<IMainView> implements RadioGroup.OnCheckedChangeListener {
+ // 3个构造只能选择其中一个，必须使用@Inject
 
+    /**
+     * 不需要网络请求，不需要RequestParameterUtils工具类使用该构造
+     * @param iBaseView
+     */
+//    @Inject
+//    public MainPresenter(IMainView iBaseView) {
+//        super(iBaseView);
+//    }
+
+    /**
+     * 需要网络请求，不需要RequestParameterUtils工具类使用该构造
+     * @param apiServer
+     * @param iBaseView
+     */
+//    @Inject
+//    public MainPresenter(ApiServer apiServer, IMainView iBaseView) {
+//        super(apiServer, iBaseView);
+//    }
+
+    /**
+     * 需要网络请求，需要RequestParameterUtils工具类使用该构造
+     * @param iBaseView
+     */
     @Inject
     public MainPresenter(ApiServer apiServer, IMainView iBaseView, RequestParameterUtils requestParameterUtils) {
         super(apiServer, iBaseView, requestParameterUtils);
