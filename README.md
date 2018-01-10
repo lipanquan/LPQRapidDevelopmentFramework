@@ -9,6 +9,8 @@ Android MVP模式快速开发框架
 
 3 使用dagger2 + MVP + （retrofit2 + okhttp3 + rxjava + rxandroid）开源库
 
+Presenter使用注意事项
+
 ![Presenter使用](https://github.com/lipanquan/LPQRapidDevelopmentFramework/raw/master/files/QQ截图20180110154725.png)
 
 
