@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <RadioGroup
+        android:id="@+id/rg_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_theme"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_navigation_1"
+            style="@style/navigation_bottom_radio"
+            android:checked="true"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="导航1" />
+
+        <RadioButton
+            android:id="@+id/rb_navigation_2"
+            style="@style/navigation_bottom_radio"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="导航2" />
+
+        <RadioButton
+            android:id="@+id/rb_navigation_3"
+            style="@style/navigation_bottom_radio"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:onClick="onClick"
+            android:text="导航3" />
+
+        <RadioButton
+            android:id="@+id/rb_navigation_4"
+            style="@style/navigation_bottom_radio"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="导航3" />
+    </RadioGroup>
+</LinearLayout>

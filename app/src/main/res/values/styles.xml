@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_theme</item>
+        <item name="colorPrimaryDark">@color/color_theme</item>
+        <item name="colorAccent">@color/color_theme</item>
+    </style>
+
+    <style name="SelectDateTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/color_theme</item>
+        <item name="colorPrimaryDark">@color/color_theme</item>
+        <item name="colorAccent">@color/color_theme</item>
+    </style>
+
+    <!-- 主页导航条的RadioButton的样式 -->
+    <style name="navigation_bottom_radio">
+        <!-- 内部组件的排列 -->
+        <item name="android:gravity">center_horizontal</item>
+        <!-- 按钮的背景 -->
+        <item name="android:background">@drawable/selector_btn_main_navigation</item>
+        <!-- 宽度 -->
+        <item name="android:layout_width">0dp</item>
+        <!-- 高度 -->
+        <item name="android:layout_height">wrap_content</item>
+        <!-- 设置RadioButton的原来图片为空 -->
+        <item name="android:button">@null</item>
+        <!-- 与其他组件宽度占相同比重 -->
+        <item name="android:layout_weight">1.0</item>
+        <!-- 底部的空隙 -->
+        <item name="android:paddingBottom">5dp</item>
+        <!-- 顶部的空隙 -->
+        <item name="android:paddingTop">5dp</item>
+        <!-- 文字的大小 -->
+        <item name="android:textSize">11sp</item>
+        <!-- 文字的颜色 -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
