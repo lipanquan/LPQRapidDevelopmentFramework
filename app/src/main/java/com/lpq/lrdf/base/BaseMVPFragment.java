@@ -24,8 +24,8 @@ import butterknife.Unbinder;
  * 作者：lipanquan on 2018/1/9 <br />
  * 邮箱：862321807@qq.cn <br />
  */
-public abstract class BaseMVPFragment<V extends IBaseView, P extends BasePresenter<V>> extends LibBaseFragment
-        implements IBaseView, View.OnClickListener {
+public abstract class BaseMVPFragment<V extends IBaseView, P extends BasePresenter<V>>
+        extends LibBaseFragment implements IBaseView {
 
     /**
      * Unbinder对象
@@ -56,6 +56,7 @@ public abstract class BaseMVPFragment<V extends IBaseView, P extends BasePresent
 
     @Override
     public void onClick(View v) {
+        super.onClick(v);
         if (!isNull(mPresenter))
             mPresenter.onClick(v);
     }
