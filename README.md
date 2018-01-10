@@ -1,2 +1,2 @@
 # LPQRapidDevelopmentFramework
-依赖于LPQLibrary
+依赖LPQLibrary
