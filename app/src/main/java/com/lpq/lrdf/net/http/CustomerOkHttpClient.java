@@ -180,8 +180,7 @@ public class CustomerOkHttpClient {
                     if (contentType != null) {
                         charset = contentType.charset(UTF8);
                     }
-                    if (contentLength != 0) {
-                        Logger.i(TAG, "");
+                    if (contentLength != 0 && contentLength < 1024) {
                         Logger.i(TAG, buffer.clone().readString(charset));
                     }
 
